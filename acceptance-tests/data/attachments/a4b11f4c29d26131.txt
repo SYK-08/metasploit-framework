@@ -1,0 +1,114 @@
+[*] changing transport to: tcp://127.0.0.1:6001
+[*] running method core_negotiate_tlv_encryption
+[*] Negotiating TLV encryption
+[*] RSA key: 30820122300d06092a864886f70d01010105000382010f003082010a0282010100bdfb321750d6525c29f74e9885d268cfb9003246f952a07115ee100c556818420088ff1f6e89107bbdc4a96dbd5d8165fad508d164a99cc1d9c363d25e9ea15cbeb783939f87b3f47cce2bc471da05ae26ebdbe8cce05ce10a69a506109538192fe9455103be7d6dcd5d61582b16686d6bafab3d5eecae2fac09fd963838f31af7c9861757b1b44aa97f2cd045cda2681a4d173cf78cfdc0f6082aad93e00aa040caeb4d533ae31d23d60839ab714442707d458f80c3c0e6d9966efe0f2eb5603bd0a90d8364b844a534ecb00e565ba8c7b44068425f88c115b2df167d55c153e16baa61889aa817fdc728628ae638377c21732c0ad637b179ce6af7b97c110f0203010001
+[*] AES key: 0xe8c765b81602bcd05fe675433a158da6a743f1a101fcbecc8b740a6dd40ad80b
+[*] Encrypted AES key: 0x73de731b70dee2ebe4ad54212090b7407b40e4dd7f06e6c9d6cfe0c33d4b6f7246bf3440b7a0274c8b53bece01603a94d3b6420f1aececdd73d955620d110bafa45dde8d2c6acad62919438a214709d2b3c094a36af99b31a756467bd6ea7d2a7330ad901dc123421a0d390c60a06bd49e8e550f224b12278a569a8b9948d67d3e3cd94bda8f97a148e633a0d83404510d61b0673f25f59a3e30d670135631d5fe19d8b66025fa08357e0eeb96fe17e3d6c8d1f3e1f7b3332a92933bd59e5037aa866e5e4bb810e16eae65648e9e51a6da59db75451519e2f852df8c84247572c4d17ef41c2ad01e18e70375deab2a5ecb97b4c6104e2e22f28d4b652d081c75
+[*] TLV encryption sorted
+[*] sending response packet
+[*] running method core_set_session_guid
+[*] sending response packet
+[*] running method core_enumextcmd
+[*] sending response packet
+[*] running method core_enumextcmd
+[*] sending response packet
+[*] running method core_loadlib
+[*] sending response packet
+[*] running method stdapi_fs_getwd
+[*] sending response packet
+[*] running method stdapi_sys_config_getuid
+[*] sending response packet
+[*] running method stdapi_sys_config_sysinfo
+[*] sending response packet
+[*] running method core_set_uuid
+[*] sending response packet
+[*] running method stdapi_net_config_get_interfaces
+[*] sending response packet
+[*] running method stdapi_net_config_get_routes
+[*] sending response packet
+[*] running method stdapi_fs_getwd
+[*] sending response packet
+[*] running method stdapi_sys_config_getenv
+[*] sending response packet
+[*] running method stdapi_sys_config_getenv
+[*] sending response packet
+[*] running method stdapi_fs_stat
+[*] sending response packet
+[*] running method stdapi_fs_stat
+[*] sending response packet
+[*] running method stdapi_fs_separator
+[*] sending response packet
+[*] running method stdapi_sys_config_getenv
+[*] sending response packet
+[*] running method stdapi_fs_chdir
+[*] sending response packet
+[*] running method stdapi_fs_getwd
+[*] sending response packet
+[*] running method stdapi_fs_stat
+[-] method stdapi_fs_stat resulted in an error
+Traceback (most recent call last):
+  File "<string>", line 1717, in create_response
+  File "ext_server_stdapi.py", line 2084, in stdapi_fs_stat
+  File "ext_server_stdapi.py", line 891, in get_stat_buffer
+FileNotFoundError: [Errno 2] No such file or directory: 'meterpreter-test-dir-crygawox'
+
+[*] sending response packet
+[*] running method stdapi_fs_mkdir
+[*] sending response packet
+[*] running method stdapi_sys_config_getenv
+[*] sending response packet
+[*] running method stdapi_fs_chdir
+[*] sending response packet
+[*] running method stdapi_fs_getwd
+[*] sending response packet
+[*] running method stdapi_fs_getwd
+[*] sending response packet
+[*] running method stdapi_fs_delete_file
+[-] method stdapi_fs_delete_file resulted in error: #1
+[*] sending response packet
+[*] running method core_channel_open
+[*] core_channel_open dispatching to handler: channel_open_stdapi_fs_file
+[*] added channel id: 1 type: MeterpreterFile
+[*] sending response packet
+[*] running method core_channel_close
+[*] closed and removed channel id: 1
+[*] sending response packet
+[*] running method stdapi_fs_getwd
+[*] sending response packet
+[*] running method stdapi_fs_search
+[*] sending response packet
+[*] running method stdapi_fs_search
+[*] sending response packet
+[*] running method stdapi_fs_search
+[*] sending response packet
+[*] running method stdapi_fs_search
+[*] sending response packet
+[*] running method stdapi_fs_getwd
+[*] sending response packet
+[*] running method stdapi_fs_search
+[*] sending response packet
+[*] running method stdapi_fs_search
+[*] sending response packet
+[*] running method stdapi_fs_search
+[*] sending response packet
+[*] running method stdapi_sys_process_execute
+[*] starting process: ['/bin/sh', '-c', "touch -d '3 January 2009 18:15:13 +0000' meterpreter-test-bnlypiez.txt"]
+[*] added process id: 3269, handle: 1
+[*] added channel id: 2 type: MeterpreterProcess
+[*] sending response packet
+[*] running method core_channel_read
+[*] sending response packet
+[*] running method stdapi_sys_process_close
+[*] closed and removed process handle: 1
+[*] sending response packet
+[*] running method stdapi_fs_search
+[*] sending response packet
+[*] running method stdapi_sys_config_getenv
+[*] sending response packet
+[*] running method stdapi_fs_chdir
+[*] sending response packet
+[*] running method stdapi_fs_getwd
+[*] sending response packet
+[*] running method stdapi_fs_delete_file
+[-] method stdapi_fs_delete_file resulted in error: #1
+[*] sending response packet
